@@ -24,6 +24,7 @@
 </head>
 <body>
     <div id="app">
+        <!-- barra de navegación -->
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -79,8 +80,19 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+        <!-- contenido -->
+        <div class="container">
+            <div class="row">
+                <!-- menú lateral -->
+                <div class="col-md-3">
+                    @include('includes.menu')
+                </div>
+                <!--  contenido principal -->
+                <div class="col-md-9">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
