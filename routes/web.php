@@ -24,4 +24,4 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function () {
     Route::get('/usuarios','UserController@index');
     Route::get('/proyectos','ProjectController@index');
     Route::get('/config','ConfigController@index');
-})
+});
